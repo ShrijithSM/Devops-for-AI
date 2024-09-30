@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sir Registration Form the 1st</title>
+</head>
+<body>
+    <form style="display: flex; justify-content: center">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td>
+                    <label>
+                        <input type="text" pattern="[A-Za-z]{4,}" id="name-input">
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age: </td>
+                <td>
+                    <label>
+                        <input type="text" pattern="[0-9]{1,3}" id="age-input">
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender: </td>
+                <td>
+                    <label>
+                        <input type="radio" name="rb1">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="rb2">
+                        Female
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>
+                        <input type="submit" value="Submit" id="submit-button">
+                    </label>
+                </td>
+            </tr>
+
+            <tr id="submit-output" style="visibility: hidden">
+                <td>
+                    <span id="submit-output-text"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
